@@ -56,7 +56,6 @@ proyecto-icfes-analisis
 ├── Proyecto-Procesamiento1.pdf
 │
 ├── data/
-├── outputs/
 │
 └── README.md
 ```
@@ -209,4 +208,4 @@ analisis.ipynb
 
 ## 13. Notas
 
-Proyecto académico desarrollado en la Pontificia Universidad Javeriana, en el curso de Procesamiento de Datos a Gran Escala.
+Proyecto académico desarrollado en la Pontificia Universidad Javeriana, en el curso de Procesamiento de Datos, dirigida por el profesor JOHN CORREDOR FRANCO
