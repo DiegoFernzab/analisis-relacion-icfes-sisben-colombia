@@ -1,43 +1,54 @@
-Análisis ICFES y Factores Socioeconómicos en Colombia
-Descripción
+# Análisis ICFES y Factores Socioeconómicos en Colombia
+
+---
+
+## 1. Descripción
 
 Este proyecto analiza la relación entre los resultados de las pruebas ICFES Saber 11 y factores socioeconómicos, educativos y de conectividad, utilizando datos abiertos del ICFES, SISBÉN y el Ministerio de Educación (MEN).
 
-El objetivo es identificar patrones y brechas territoriales que permitan orientar la toma de decisiones en política pública educativa.
+El propósito es identificar patrones y brechas territoriales que permitan orientar la toma de decisiones en política pública educativa.
 
-Objetivo del proyecto
+---
+
+## 2. Objetivo del proyecto
 
 Identificar y cuantificar la relación entre los resultados de las pruebas Saber 11 y variables como:
 
-Condiciones socioeconómicas
-Acceso a internet y tecnología
-Indicadores educativos municipales
+- Condiciones socioeconómicas  
+- Acceso a internet y tecnología  
+- Indicadores educativos municipales  
 
-Con énfasis en los municipios:
+### Municipios de estudio
 
-Bogotá D.C.
-Sogamoso
-Bugalagrande
+- Bogotá D.C.  
+- Sogamoso  
+- Bugalagrande  
 
-Tal como se plantea en el documento del proyecto .
+---
 
-Contexto del problema
+## 3. Contexto del problema
 
-Los resultados académicos no dependen únicamente del estudiante, sino del entorno en el que se desarrolla:
+El rendimiento académico no depende únicamente del estudiante, sino también de su entorno.
 
-Diferencias en conectividad
-Condiciones de pobreza
-Calidad del sistema educativo
+### Factores relevantes
 
-Por ejemplo:
+- Diferencias en conectividad  
+- Condiciones de pobreza  
+- Calidad del sistema educativo  
 
-Bogotá presenta alto desempeño y mayor conectividad
-Sogamoso presenta un nivel intermedio
-Bugalagrande refleja mayor vulnerabilidad
+### Ejemplo de contraste territorial
 
-Esto se evidencia en el análisis del documento de investigación .
+| Municipio      | Características principales |
+|---------------|---------------------------|
+| Bogotá        | Alto desempeño, alta conectividad |
+| Sogamoso      | Nivel intermedio |
+| Bugalagrande  | Mayor vulnerabilidad, menor desempeño |
 
-Estructura del repositorio
+---
+
+## 4. Estructura del repositorio
+
+```bash
 proyecto-icfes-analisis
 │
 ├── analisis.ipynb
@@ -48,95 +59,154 @@ proyecto-icfes-analisis
 ├── outputs/
 │
 └── README.md
-Análisis Exploratorio de Datos
+```
 
-Se realizó un análisis exploratorio para entender la estructura, distribución y relaciones entre variables.
+---
 
-1. Distribuciones
-Histograma del puntaje global
-Distribución aproximadamente unimodal con dispersión y presencia de valores atípicos
-2. Comparación por municipio
-Bogotá presenta el mayor puntaje promedio
-Sogamoso comportamiento intermedio
-Bugalagrande menor desempeño
+## 5. Análisis Exploratorio de Datos (EDA)
 
-Este resultado coincide con lo documentado en la entrega .
+Se realizó un análisis exploratorio para comprender la estructura, distribución y relaciones entre variables.
 
-3. Análisis temporal
-Evolución del puntaje global por periodo
-Bogotá mantiene los niveles más altos en la mayoría de los periodos
-Bugalagrande presenta mayor variabilidad
-4. Análisis por área
+### 5.1 Distribuciones
 
-Se compararon Matemáticas, Lectura Crítica e Inglés:
+- Histograma del puntaje global  
+- Distribución unimodal con dispersión  
+- Presencia de valores atípicos  
 
-Lectura Crítica presenta promedios ligeramente superiores
-Inglés muestra mayor variabilidad
-Bugalagrande se mantiene por debajo en todas las áreas
-5. Variables socioeconómicas analizadas
-Estrato de vivienda
-Acceso a internet
-Acceso a computador
-Clasificación SISBÉN
-Hacinamiento (H_5)
-Índices I1–I4
-6. Hallazgos principales
-Existe relación entre estrato socioeconómico y puntaje
-El acceso a internet se asocia con mejores resultados
-Los municipios con mejor cobertura educativa presentan mejores puntajes
-Los factores socioeconómicos influyen directamente en el desempeño académico
-Visualizaciones incluidas
+### 5.2 Comparación por municipio
 
-El análisis incluye:
+- Bogotá presenta el mayor puntaje promedio  
+- Sogamoso muestra comportamiento intermedio  
+- Bugalagrande presenta menor desempeño  
 
-Histogramas de distribución
-Series de tiempo
-Gráficos de barras
-Boxplots
-Diagramas de dispersión
-Matriz de correlación
+### 5.3 Análisis temporal
 
-Tal como se plantea en la sección de exploración de datos .
+- Evolución del puntaje global por periodo  
+- Bogotá mantiene niveles superiores  
+- Bugalagrande presenta mayor variabilidad  
 
-Metodología
+### 5.4 Análisis por área
+
+Se evaluaron:
+
+- Matemáticas  
+- Lectura Crítica  
+- Inglés  
+
+**Resultados:**
+
+- Lectura Crítica presenta mejores promedios  
+- Inglés muestra mayor variabilidad  
+- Bugalagrande tiene menor desempeño en todas las áreas  
+
+### 5.5 Variables socioeconómicas analizadas
+
+- Estrato de vivienda  
+- Acceso a internet  
+- Acceso a computador  
+- Clasificación SISBÉN  
+- Hacinamiento (H_5)  
+- Índices I1 – I4  
+
+### 5.6 Hallazgos principales
+
+- Existe relación entre estrato socioeconómico y puntaje  
+- El acceso a internet se asocia con mejores resultados  
+- Mayor cobertura educativa implica mejores puntajes  
+- Factores socioeconómicos influyen directamente en el desempeño académico  
+
+---
+
+## 6. Visualizaciones incluidas
+
+El proyecto incluye:
+
+- Histogramas  
+- Series de tiempo  
+- Gráficos de barras  
+- Boxplots  
+- Diagramas de dispersión  
+- Matriz de correlación  
+
+---
+
+## 7. Metodología
 
 Se sigue la metodología CRISP-DM:
 
-Entendimiento del negocio
-Entendimiento de los datos
-Preparación de datos
-Exploración y análisis
-Modelado (etapas posteriores)
-Evaluación
-Tecnologías utilizadas
-Python
-Pandas
-Matplotlib
-Jupyter Notebook
-Apache Spark (en etapas posteriores)
-Fuentes de datos
-ICFES Saber 11 (Datos Abiertos)
-SISBÉN (DNP)
-MEN - Educación (SIMAT)
-Ejecución del proyecto
-Clonar el repositorio:
-git clone https://github.com/tu-usuario/tu-repo.git
-Instalar dependencias:
-pip install pandas matplotlib notebook
-Ejecutar Jupyter Notebook:
-jupyter notebook
-Abrir el archivo:
-analisis.ipynb
-Conclusiones preliminares
-Las brechas educativas tienen un componente territorial importante
-La conectividad es un factor clave en el desempeño académico
-El nivel socioeconómico influye significativamente en los resultados
-Existen diferencias entre áreas del conocimiento que deben considerarse en intervenciones
-Autores
-Juan Santiago Méndez
-Juan Martín Trejos
-Diego Zabala
-Juan David Ordoñez
-Notas
+1. Entendimiento del negocio  
+2. Entendimiento de los datos  
+3. Preparación de datos  
+4. Exploración y análisis  
+5. Modelado (etapas posteriores)  
+6. Evaluación  
 
-Proyecto académico desarrollado en la Pontificia Universidad Javeriana, en el marco del curso de Procesamiento de Datos a Gran Escala.
+---
+
+## 8. Tecnologías utilizadas
+
+- Python  
+- Pandas  
+- Matplotlib  
+- Jupyter Notebook  
+- Apache Spark (etapas posteriores)  
+
+---
+
+## 9. Fuentes de datos
+
+- ICFES Saber 11 (Datos abiertos)  
+- SISBÉN (DNP)  
+- Ministerio de Educación Nacional (MEN)  
+
+---
+
+## 10. Ejecución del proyecto
+
+### Clonar repositorio
+
+```bash
+git clone https://github.com/tu-usuario/tu-repo.git
+```
+
+### Instalar dependencias
+
+```bash
+pip install pandas matplotlib notebook
+```
+
+### Ejecutar
+
+```bash
+jupyter notebook
+```
+
+### Abrir
+
+```bash
+analisis.ipynb
+```
+
+---
+
+## 11. Conclusiones preliminares
+
+- Las brechas educativas tienen un componente territorial importante  
+- La conectividad es un factor clave en el desempeño académico  
+- El nivel socioeconómico influye significativamente en los resultados  
+- Existen diferencias entre áreas del conocimiento  
+
+---
+
+## 12. Autores
+
+- Juan Santiago Méndez  
+- Juan Martín Trejos  
+- Diego Zabala  
+- Juan David Ordoñez  
+
+---
+
+## 13. Notas
+
+Proyecto académico desarrollado en la Pontificia Universidad Javeriana, en el curso de Procesamiento de Datos a Gran Escala.
