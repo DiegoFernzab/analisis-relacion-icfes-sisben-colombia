@@ -145,8 +145,6 @@ SECCIÓN 6 Modelos supervisados: RF, XGBoost, LightGBM + verificación de hipót
 **Target:** estudiantes con PUNT_GLOBAL P10 (~207 puntos) 
 **AUC-ROC:** 0.70 · Recall: 0.50 · Precision: 0.20
 
-### Clustering K-Means (No Supervisado)
-Segmentación de perfiles socioeconómicos para identificar grupos de estudiantes con características similares.
 
 ---
 
